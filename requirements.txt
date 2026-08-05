@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+opencv-python
+nibabel
+scipy
+jupyter
+notebook
+tqdm
+
+# Choose one deep learning framework based on your implementation:
+# tensorflow
+# torch
+# torchvision
+# monai
