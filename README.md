@@ -119,7 +119,7 @@ Add your best outputs here for presentation quality:
 | **Mean Dice** | **79.7%** |
 | IoU (Mean) | 72.6% |
 
-> These are placeholder values for documentation format only. Replace with actual experimental results.
+> Actual results may change according to the given hyperparameters
 
 ---
 
