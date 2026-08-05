@@ -109,12 +109,17 @@ Add your best outputs here for presentation quality:
 - **Qualitative Outputs:** Input MRI vs Ground Truth vs Predicted Mask
 - **Model Performance Plots:** Loss and accuracy curves
 
-### Suggested Result Template
+### Sample Metrics (Placeholder for Demo)
 
-- Dice Score (WT): `TBD`
-- Dice Score (TC): `TBD`
-- Dice Score (ET): `TBD`
-- Validation Loss: `TBD`
+| Metric | Value |
+|---|---:|
+| Dice (WT) | 82.4% |
+| Dice (TC) | 79.8% |
+| Dice (ET) | 76.9% |
+| **Mean Dice** | **79.7%** |
+| IoU (Mean) | 72.6% |
+
+> These are placeholder values for documentation format only. Replace with actual experimental results.
 
 ---
 
