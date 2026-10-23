@@ -44,6 +44,28 @@ Dice-score evaluation and visualization
 
 The project also prepares BraTS data for an nnU-Net pipeline. The evaluation notebook compares predictions from **SwinUNETR** and **nnU-Net**.
 
+## System Architecture
+
+```mermaid
+flowchart TD
+    A[BraTS inputs<br/>T1, T1ce, T2, FLAIR + ground-truth masks]
+    B[Dataset discovery<br/>& validation]
+    C[Preprocessing<br/>label conversion + normalization + patch sampling]
+    D[Reproducible split<br/>train/validation]
+    E1[MONAI SwinUNETR<br/>training]
+    E2[nnU-Net prep<br/>& training]
+    F[Sliding-window inference]
+    G[4-class voxel output<br/>0 Background | 1 NCR/NCR-Net | 2 Edema | 3 ET]
+    H[Post-processing<br/>& NIfTI prediction export]
+    I[Evaluation & visualization<br/>Dice (ET, TC, WT) + confusion matrices + error maps + model comparison]
+
+    A --> B --> C --> D
+    D --> E1
+    D --> E2
+    E1 --> F --> G --> H --> I
+    E2 --> I
+```
+
 ---
 
 ## Tech Stack
